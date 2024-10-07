@@ -1,1 +1,116 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="https://www.1home.io/blog/content/images/2019/06/i-1.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epsilon 3 - The Ultimate Smart Home Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Epsilon 3</span> Smart Home Assistant</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Features</a>
+                        <div class="dropdown-content">
+                            <a href="#voice-control"> Voice Control</a>
+                            <a href="#home-automation">Home Automation</a>
+                            <a href="#ai-learning">AI Learning</a>
+                        </div>
+                    </li>
+                    <li><a href="options.html">Options</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <form action="#" method="get">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Welcome to the Future of Smart Home Assistance</h1>
+            <p>Epsilon 3 - Your intelligent, adaptable, and indispensable home companion</p>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>Subscribe to Our Newsletter</h1>
+            <form>
+                <input type="email" placeholder="Enter Email...">
+                <button type="submit" class="button_1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="https://www.mouser.com/blog/Portals/11/Voice%20Control%20Home.png" alt="Voice Control">
+                <h3>Voice Control</h3>
+                <p>Control your entire home with just your voice. Epsilon 3 understands natural language and context.</p>
+            </div>
+            <div class="box">
+                <img src="https://uplan.io/wp-content/uploads/2021/04/How-much-does-a-smart-home-automation-project.jpg" alt="Home Automation">
+                <h3>Home Automation</h3>
+                <p>Seamlessly integrate with your smart devices for effortless control of your entire home ecosystem.</p>
+            </div>
+            <div class="box">
+                <img src="https://elearningindustry.com/wp-content/uploads/2019/12/4-Benefits-Of-AI-In-Personalized-Learning.jpg" alt="AI Learning">
+                <h3>AI Learning</h3>
+                <p>Epsilon 3 learns your preferences and routines, adapting to provide a truly personalized experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="https://aisav.com/wp-content/uploads/2023/11/AdobeStock_576414664-scaled.jpeg" style="width:100%" alt="Epsilon 3 in living room">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://blog.inventables.com/hs-fs/hubfs/smart-tech-with-cabinets.jpg?width=2400&height=1260&name=smart-tech-with-cabinets.jpg" style="width:100%" alt="Epsilon 3 in kitchen">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://img.freepik.com/premium-photo/smart-bedroom-smart-home-technology-with-connected-furniture_1149331-208.jpg?w=1380" style="width:100%" alt="Epsilon 3 in bedroom">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <footer>
+        <p>Epsilon 3 Smart Home Assistant, Copyright &copy; 2024</p>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,352 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #50b3a2;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+    position: relative;
+    z-index: 1000;
+    overflow: visible;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+    position: relative;
+}
+
+header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #f9f9f9;
+    white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+#showcase, #main {
+    position: relative;
+    z-index: 1;
+}
+
+/* Showcase Styles */
+#showcase {
+    min-height: 400px;
+    background: url('https://savemax.in/blogs/wp-content/uploads/2023/11/AdobeStock_607348589.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+/* Newsletter Styles */
+#newsletter {
+    padding: 15px;
+    color: #ffffff;
+    background: #35424a;
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/* Button Styles */
+.button_1 {
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Boxes Styles */
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img {
+    width: 90px;
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Search Styles */
+.search-container {
+    float: right;
+}
+
+.search-container input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #ccc;
+}
+
+/* Reference Page Styles */
+.reference {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.reference h2 {
+    color: #e8491d;
+    margin-bottom: 5px;
+}
+
+.reference p {
+    margin: 5px 0;
+}
+
+/* Option Page Styles */
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.option-card {
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 48%;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.option-card h3 {
+    color: #50b3a2;
+    margin-bottom: 10px;
+}
+
+.option-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.option-card p {
+    margin-bottom: 15px;
+}
+
+.option-card .price {
+    font-weight: bold;
+    color: #e8491d;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.option-card .button_1 {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Pricing Page Styles */
+.pricing-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.pricing-plan {
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.pricing-plan h2 {
+    color: #50b3a2;
+}
+
+.pricing-plan .price {
+    font-size: 2em;
+    color: #e8491d;
+    margin: 20px 0;
+}
+
+.pricing-plan ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pricing-plan ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.pricing-plan .button_1 {
+    margin-top: 20px;
+}
+
+/* Page Title Styles */
+.page-title {
+    color: #50b3a2;
+    margin-bottom: 20px;
+}
