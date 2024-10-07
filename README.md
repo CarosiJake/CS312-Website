@@ -1,6 +1,7 @@
 Assignment 2 For CS 312
 
 Assignment Details:
+
 Imagine you have been hired by a company to implement a website that will market their new and improved product, the Epsilon 3!! 
 
 You can choose anything to be Epsilon 3, a new shoe, a flying car, a home pet neutering system, whatever. That can be up to your own imagination.
